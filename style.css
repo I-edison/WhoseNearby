@@ -601,14 +601,10 @@ h3 {
 
 .pc-cover {
   height: 110px;
-  background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.shutterstock.com%2Fimage-photo%2Fgentleman-receives-haircut-oyo-nigeria-260nw-2335521405.jpg&tbnid=JKx0FmT3EKUl6M&vet=1&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fimage-photo%2Fgentleman-receives-haircut-oyo-nigeria-on-2335521405&docid=wnArTV8uIg6VHM&w=389&h=280&source=sh%2Fx%2Fim%2Fm1%2F2&kgs=16fbbda9a4f9e902&shem=epsd1%2Crimspwouoe");
+  background-image: url("/res/hai-phung-m4Pd_e-4zKs-unsplash (1).jpg");
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(
-    135deg,
-    var(--green) 0%,
-    var(--green-deep) 100%
-  );
+  
 }
 
 .pc-body {
