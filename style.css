@@ -633,6 +633,12 @@ h1, h2, h3 {
   .hero h1 { font-size: 32px; }
   .hero-ctas { flex-direction: column; }
   .btn { width: 100%; }
+  .btn-primary-2{
+    width: 120px;
+    height: 40px;
+    background-color: var(--green);
+    color: var(--white);
+  }
 }
 
 /* reduced motion */
