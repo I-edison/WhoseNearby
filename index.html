@@ -1,298 +1,378 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>whoseNearby — Find trusted help, nearby</title>
+    <meta
+      name="description"
+      content="whoseNearby connects you with verified electricians, plumbers, tailors, barbers and more — right in your neighborhood."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="res\Asset 2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- noise/texture overlay -->
+    <div class="grain"></div>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WhoseNearby — Find trusted help, nearby</title>
-  <meta name="description" content="WhoseNearby connects you with verified electricians, plumbers, tailors, barbers and more — right in your neighborhood.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a href="#top"><img class="logo" src="res\Asset 1.png" alt="" /></a>
+        <nav class="header-nav">
+          <a href="#how">How it works</a>
+          <a href="#trust">Why whoseNearby?</a>
+          <a href="#providers">For providers</a>
+        </nav>
+        <a href="#waitlist" class="btn btn-primary-2 btn-primary"
+          >Join waitlist</a
+        >
+      </div>
+    </header>
 
-<body>
-  
-  <!-- noise/texture overlay -->
-  <div class="grain"></div>
-  
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a href="#top" class="logo">Local<span>Serve</span></a>
-      <nav class="header-nav">
-        <a href="#how">How it works</a>
-        <a href="#trust">Why whoseNearby?</a>
-        <a href="#cities">Cities</a>
-      </nav>
-      <a href="#waitlist" class="btn btn-primary-2 btn-primary">Join waitlist</a>
-    </div>
-  </header>
-  
-  <main id="top">
-    
-    <!-- HERO -->
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="dot-live"></span> Coming soon to Benin</p>
-          <h1>The help you need<br>is closer than<br><span class="hl">you think.</span></h1>
-          <p class="hero-sub">WhoseNearby shows you verified electricians, plumbers, tailors, barbers and more — ranked by how close they are and whether they're free right now.</p>
-          <div class="hero-ctas">
-            <a href="#waitlist" class="btn btn-primary">Join the waitlist</a>
-            <a href="#how" class="btn btn-ghost">See how it works</a>
-          </div>
-        </div>
-        
-        <div class="hero-visual" aria-hidden="true">
-          <svg viewBox="0 0 480 480" class="radar-svg">
-            <circle cx="240" cy="240" r="220" class="ring ring-1" />
-            <circle cx="240" cy="240" r="155" class="ring ring-2" />
-            <circle cx="240" cy="240" r="90" class="ring ring-3" />
-            <line x1="240" y1="20" x2="240" y2="460" class="crosshair" />
-            <line x1="20" y1="240" x2="460" y2="240" class="crosshair" />
-            <circle cx="240" cy="240" r="7" class="center-pin" />
-            <circle cx="240" cy="240" r="7" class="center-pulse" />
-          </svg>
-          
-          <div class="float-card fc-1">
-            <div class="fc-row">
-              <div class="fc-avatar">EO</div>
-              <div class="fc-info">
-                <div class="fc-name">Bright Sparks</div>
-                <div class="fc-meta"><span class="fc-online">●</span> Online · 0.8km</div>
-              </div>
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span class="dot-live"></span> Coming soon to Benin
+            </p>
+            <h1>
+              The help you need<br />is closer than<br /><span class="hl"
+                >you think.</span
+              >
+            </h1>
+            <p class="hero-sub">
+              whoseNearby shows you verified electricians, plumbers, tailors,
+              barbers and more — ranked by how close they are and whether
+              they're free right now.
+            </p>
+            <div class="hero-ctas">
+              <a href="#waitlist" class="btn btn-primary">Join the waitlist</a>
+              <a href="#how" class="btn btn-ghost">See how it works</a>
             </div>
           </div>
-          
-          <div class="float-card fc-2">
-            <div class="fc-row">
-              <div class="fc-avatar fc-avatar-b">FB</div>
-              <div class="fc-info">
-                <div class="fc-name">Stitch &amp; Style</div>
-                <div class="fc-meta"><span class="fc-online">●</span> Online · 1.2km</div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="float-card fc-3">
-            <div class="fc-row">
-              <div class="fc-avatar fc-avatar-c">KA</div>
-              <div class="fc-info">
-                <div class="fc-name">Kola's Kuts</div>
-                <div class="fc-meta"><span class="fc-away">●</span> Offline · 1.8km</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- LOGOS / CATEGORY STRIP -->
-    <section class="category-strip">
-      <div class="strip-track">
-        <div class="strip-group">
-          <span>Electricians</span><span>·</span>
-          <span>Plumbers</span><span>·</span>
-          <span>Tailors</span><span>·</span>
-          <span>Barbers</span><span>·</span>
-          <span>Doctors</span><span>·</span>
-          <span>Mechanics</span><span>·</span>
-          <span>Painters</span><span>·</span>
-          <span>Tech repair</span><span>·</span>
-        </div>
-        <div class="strip-group" aria-hidden="true">
-          <span>Electricians</span><span>·</span>
-          <span>Plumbers</span><span>·</span>
-          <span>Tailors</span><span>·</span>
-          <span>Barbers</span><span>·</span>
-          <span>Doctors</span><span>·</span>
-          <span>Mechanics</span><span>·</span>
-          <span>Painters</span><span>·</span>
-          <span>Tech repair</span><span>·</span>
-        </div>
-        <div class="strip-group">
-          <span>Electricians</span><span>·</span>
-          <span>Plumbers</span><span>·</span>
-          <span>Tailors</span><span>·</span>
-          <span>Barbers</span><span>·</span>
-          <span>Doctors</span><span>·</span>
-          <span>Mechanics</span><span>·</span>
-          <span>Painters</span><span>·</span>
-          <span>Tech repair</span><span>·</span>
-        </div>
-        <div class="strip-group" aria-hidden="true">
-          <span>Electricians</span><span>·</span>
-          <span>Plumbers</span><span>·</span>
-          <span>Tailors</span><span>·</span>
-          <span>Barbers</span><span>·</span>
-          <span>Doctors</span><span>·</span>
-          <span>Mechanics</span><span>·</span>
-          <span>Painters</span><span>·</span>
-          <span>Tech repair</span><span>·</span>
-        </div>
-      </div>
-    </section>
-    
-    <!-- HOW IT WORKS -->
-    <section class="how" id="how">
-      <div class="wrap">
-        <p class="section-eyebrow">How it works</p>
-        <h2 class="section-title">Three taps to trusted help.</h2>
-        
-        <div class="how-grid">
-          <div class="how-card">
-            <div class="how-mark">Find</div>
-            <h3>Search what you need</h3>
-            <p>Type "electrician" or browse by category. We rank results by distance and who's online right now — not who paid the most.</p>
-          </div>
-          <div class="how-card">
-            <div class="how-mark">Check</div>
-            <h3>See their track record</h3>
-            <p>Every provider is reviewed by our team before they're listed. Real photos of past work, real ratings from real customers.</p>
-          </div>
-          <div class="how-card">
-            <div class="how-mark">Connect</div>
-            <h3>Message, meet, get it done</h3>
-            <p>Chat in-app or jump straight to WhatsApp. Pay through your WhoseNearby wallet, and confirm the job with a quick QR scan.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- TRUST / VERIFICATION -->
-    <section class="trust" id="trust">
-      <div class="wrap trust-grid">
-        <div class="trust-visual" aria-hidden="true">
-          <div class="badge-demo">
-            <div class="badge-demo-row">
-              <div class="badge-icon">✓</div>
-              <div>
-                <div class="badge-title">Team-verified</div>
-                <div class="badge-sub">Every provider checked before going live</div>
-              </div>
-            </div>
-            <div class="badge-demo-row">
-              <div class="badge-icon">QR</div>
-              <div>
-                <div class="badge-title">Scan to confirm</div>
-                <div class="badge-sub">Proof the provider actually showed up</div>
-              </div>
-            </div>
-            <div class="badge-demo-row">
-              <div class="badge-icon">★</div>
-              <div>
-                <div class="badge-title">Reviewed after every job</div>
-                <div class="badge-sub">Reputation that follows them everywhere</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="trust-copy">
-          <p class="section-eyebrow">Why it's different</p>
-          <h2 class="section-title">Built so nobody gets played.</h2>
-          <p class="trust-text">Anyone can post a number on a flyer. WhoseNearby providers go through a real review before they're searchable — and every completed job is confirmed on both sides, so reputations actually mean something.</p>
-          <ul class="trust-list">
-            <li>Verification before listing — not after complaints</li>
-            <li>Online status shows who can actually come now</li>
-            <li>In-app wallet keeps payment simple and traceable</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    
-    <!-- FOR PROVIDERS -->
-    <section class="providers" id="providers">
-      <div class="wrap providers-grid">
-        <div class="providers-copy">
-          <p class="section-eyebrow">For barbers, tailors, fixers &amp; more</p>
-          <h2 class="section-title">Your skill,<br>finally visible.</h2>
-          <p class="trust-text">List your service for free. Show off your best work, collect real reviews, and let customers within reach find you — without spending a naira on flyers.</p>
-          <a href="#waitlist" class="btn btn-primary">List your service</a>
-        </div>
-        <div class="providers-card">
-          <div class="pc-cover"></div>
-          <div class="pc-body">
-            <div class="pc-name">Kola Adeyemi</div>
-            <div class="pc-role">✂ Barber · Benin Uniben</div>
-            <div class="pc-stats">
-              <div><strong>4.9</strong><span>rating</span></div>
-              <div><strong>128</strong><span>jobs done</span></div>
-              <div><strong>1.8km</strong><span>from you</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- WAITLIST -->
-    <section class="waitlist" id="waitlist">
-      <div class="wrap waitlist-inner">
-        <p class="section-eyebrow light">Be first in</p>
-        <h2 class="section-title light">Get WhoseNearby<br>before everyone else.</h2>
-        <p class="waitlist-sub">Tell us where you are and what you need. We'll let you know the moment we launch nearby.</p>
-        
-        <form id="waitlist-form" class="waitlist-form" autocomplete="off">
-          <div class="field-row">
-            <div class="field">
-              <label for="wl-name">Full name</label>
-              <input type="text" id="wl-name" name="name" placeholder="Amara Johnson" required>
-            </div>
-            <div class="field">
-              <label for="wl-contact">Phone or email</label>
-              <input type="text" id="wl-contact" name="contact" placeholder="0801 234 5678" required>
-            </div>
-          </div>
-          <div class="field-row">
-            <div class="field">
-              <label for="wl-city">City</label>
-              <select id="wl-city" name="city" required>
-                <option value="">Select your city</option>
-                <option>Benin</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="wl-role">I want to join as</label>
-              <select id="wl-role" name="role" required>
-                <option value="">Select one</option>
-                <option value="customer">A customer — find services</option>
-                <option value="provider">A provider — list my service</option>
-                <option value="both">Both</option>
-              </select>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full" id="wl-submit">Join the waitlist</button>
-        </form>
-        
-        <div class="waitlist-success" id="waitlist-success" hidden>
-          <div class="success-icon">✓</div>
-          <h3>You're on the list, <span id="success-name">friend</span>.</h3>
-          <p>We'll reach out the moment WhoseNearby lands in your city. Thanks for being early.</p>
-        </div>
-      </div>
-    </section>
-    
-  </main>
-  
-  <footer class="site-footer" id="cities">
-    <div class="wrap footer-inner">
-      <div class="footer-brand">
-        <div class="logo">Local<span>Serve</span></div>
-        <p>Find trusted help, nearby.</p>
-      </div>
-      <div class="footer-cities">
-        <h4>Launching first in</h4>
-        <p>Benin</p>
-      </div>
-      <div class="footer-meta">
-        <p>© 2026 WhoseNearby. Built for the neighborhood.</p>
-        <p>Terms & Conditions</p>
-      </div>
-    </div>
-  </footer>
-  
-  <script src="app.js"></script>
-</body>
 
+          <div class="hero-visual" aria-hidden="true">
+            <svg viewBox="0 0 480 480" class="radar-svg">
+              <circle cx="240" cy="240" r="220" class="ring ring-1" />
+              <circle cx="240" cy="240" r="155" class="ring ring-2" />
+              <circle cx="240" cy="240" r="90" class="ring ring-3" />
+              <line x1="240" y1="20" x2="240" y2="460" class="crosshair" />
+              <line x1="20" y1="240" x2="460" y2="240" class="crosshair" />
+              <circle cx="240" cy="240" r="7" class="center-pin" />
+              <circle cx="240" cy="240" r="7" class="center-pulse" />
+            </svg>
+
+            <div class="float-card fc-1">
+              <div class="fc-row">
+                <div class="fc-avatar">EO</div>
+                <div class="fc-info">
+                  <div class="fc-name">Bright Sparks</div>
+                  <div class="fc-meta">
+                    <span class="fc-online">●</span> Online · 0.8km
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="float-card fc-2">
+              <div class="fc-row">
+                <div class="fc-avatar fc-avatar-b">FB</div>
+                <div class="fc-info">
+                  <div class="fc-name">Stitch &amp; Style</div>
+                  <div class="fc-meta">
+                    <span class="fc-online">●</span> Online · 1.2km
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="float-card fc-3">
+              <div class="fc-row">
+                <div class="fc-avatar fc-avatar-c">KA</div>
+                <div class="fc-info">
+                  <div class="fc-name">Kola's Kuts</div>
+                  <div class="fc-meta">
+                    <span class="fc-away">●</span> Offline · 1.8km
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOGOS / CATEGORY STRIP -->
+      <section class="category-strip">
+        <div class="strip-track">
+          <div class="strip-group">
+            <span>Electricians</span><span>·</span> <span>Plumbers</span
+            ><span>·</span> <span>Tailors</span><span>·</span>
+            <span>Barbers</span><span>·</span> <span>Doctors</span
+            ><span>·</span> <span>Mechanics</span><span>·</span>
+            <span>Painters</span><span>·</span> <span>Tech repair</span
+            ><span>·</span>
+          </div>
+          <div class="strip-group" aria-hidden="true">
+            <span>Electricians</span><span>·</span> <span>Plumbers</span
+            ><span>·</span> <span>Tailors</span><span>·</span>
+            <span>Barbers</span><span>·</span> <span>Doctors</span
+            ><span>·</span> <span>Mechanics</span><span>·</span>
+            <span>Painters</span><span>·</span> <span>Tech repair</span
+            ><span>·</span>
+          </div>
+          <div class="strip-group">
+            <span>Electricians</span><span>·</span> <span>Plumbers</span
+            ><span>·</span> <span>Tailors</span><span>·</span>
+            <span>Barbers</span><span>·</span> <span>Doctors</span
+            ><span>·</span> <span>Mechanics</span><span>·</span>
+            <span>Painters</span><span>·</span> <span>Tech repair</span
+            ><span>·</span>
+          </div>
+          <div class="strip-group" aria-hidden="true">
+            <span>Electricians</span><span>·</span> <span>Plumbers</span
+            ><span>·</span> <span>Tailors</span><span>·</span>
+            <span>Barbers</span><span>·</span> <span>Doctors</span
+            ><span>·</span> <span>Mechanics</span><span>·</span>
+            <span>Painters</span><span>·</span> <span>Tech repair</span
+            ><span>·</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section class="how" id="how">
+        <div class="wrap">
+          <p class="section-eyebrow">How it works</p>
+          <h2 class="section-title">Three taps to trusted help.</h2>
+
+          <div class="how-grid">
+            <div class="how-card">
+              <div class="how-mark">Find</div>
+              <h3>Search what you need</h3>
+              <p>
+                Type "electrician" or browse by category. We rank results by
+                distance and who's online right now — not who paid the most.
+              </p>
+            </div>
+            <div class="how-card">
+              <div class="how-mark">Check</div>
+              <h3>See their track record</h3>
+              <p>
+                Every provider is reviewed by our team before they're listed.
+                Real photos of past work, real ratings from real customers.
+              </p>
+            </div>
+            <div class="how-card">
+              <div class="how-mark">Connect</div>
+              <h3>Message, meet, get it done</h3>
+              <p>
+                Chat in-app or jump straight to WhatsApp. Pay through your
+                whoseNearby wallet, and confirm the job with a quick QR scan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRUST / VERIFICATION -->
+      <section class="trust" id="trust">
+        <div class="wrap trust-grid">
+          <div class="trust-visual" aria-hidden="true">
+            <div class="badge-demo">
+              <div class="badge-demo-row">
+                <div class="badge-icon">✓</div>
+                <div>
+                  <div class="badge-title">Team-verified</div>
+                  <div class="badge-sub">
+                    Every provider checked before going live
+                  </div>
+                </div>
+              </div>
+              <div class="badge-demo-row">
+                <div class="badge-icon">QR</div>
+                <div>
+                  <div class="badge-title">Scan to confirm</div>
+                  <div class="badge-sub">
+                    Proof the provider actually showed up
+                  </div>
+                </div>
+              </div>
+              <div class="badge-demo-row">
+                <div class="badge-icon">★</div>
+                <div>
+                  <div class="badge-title">Reviewed after every job</div>
+                  <div class="badge-sub">
+                    Reputation that follows them everywhere
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="trust-copy">
+            <p class="section-eyebrow">Why it's different</p>
+            <h2 class="section-title">Built so nobody gets played.</h2>
+            <p class="trust-text">
+              Anyone can post a number on a flyer. whoseNearby providers go
+              through a real review before they're searchable — and every
+              completed job is confirmed on both sides, so reputations actually
+              mean something.
+            </p>
+            <ul class="trust-list">
+              <li>Verification before listing — not after complaints</li>
+              <li>Online status shows who can actually come now</li>
+              <li>In-app wallet keeps payment simple and traceable</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOR PROVIDERS -->
+      <section class="providers" id="providers">
+        <div class="wrap providers-grid">
+          <div class="providers-copy">
+            <p class="section-eyebrow">
+              For barbers, tailors, fixers &amp; more
+            </p>
+            <h2 class="section-title">Your skill,<br />finally visible.</h2>
+            <p class="trust-text">
+              List your service for free. Show off your best work, collect real
+              reviews, and let customers within reach find you — without
+              spending a naira on flyers.
+            </p>
+            <a href="#waitlist" class="btn btn-primary">List your service</a>
+          </div>
+          <div class="providers-card">
+            <div class="pc-cover"></div>
+            <div class="pc-body">
+              <div class="pc-name">Kola Adeyemi</div>
+              <div class="pc-role">✂ Barber · Benin Uniben</div>
+              <div class="pc-stats">
+                <div><strong>4.9</strong><span>rating</span></div>
+                <div><strong>128</strong><span>jobs done</span></div>
+                <div><strong>1.8km</strong><span>from you</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WAITLIST -->
+      <section class="waitlist" id="waitlist">
+        <div class="wrap waitlist-inner">
+          <p class="section-eyebrow light">Be first in</p>
+          <h2 class="section-title light">
+            Get whoseNearby<br />before everyone else.
+          </h2>
+          <p class="waitlist-sub">
+            Tell us where you are and what you need. We'll let you know the
+            moment we launch nearby.
+          </p>
+
+          <form id="waitlist-form" class="waitlist-form" autocomplete="off">
+            <div class="field-row">
+              <div class="field">
+                <label for="wl-name">Full name</label>
+                <input
+                  type="text"
+                  id="wl-name"
+                  name="name"
+                  placeholder="Amara Johnson"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="wl-contact">Phone or email</label>
+                <input
+                  type="text"
+                  id="wl-contact"
+                  name="contact"
+                  placeholder="0801 234 5678"
+                  required
+                />
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="wl-city">City</label>
+                <select id="wl-city" name="city" required>
+                  <option value="">Select your city</option>
+                  <option>Lagos</option>
+                  <option>Abuja</option>
+                  <option>Port Harcourt</option>
+                  <option>Ibadan</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="wl-role">I want to join as</label>
+                <select id="wl-role" name="role" required>
+                  <option value="">Select one</option>
+                  <option value="customer">A customer — find services</option>
+                  <option value="provider">A provider — list my service</option>
+                  <option value="both">Both</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="wl-name">Full name</label>
+                <input
+                  class="comment"
+                  type="text"
+                  id="wl-comment"
+                  name="name"
+                  placeholder="Amara Johnson"
+                />
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary btn-full"
+              id="wl-submit"
+            >
+              Join the waitlist
+            </button>
+          </form>
+
+          <div class="waitlist-success" id="waitlist-success" hidden>
+            <div class="success-icon">✓</div>
+            <h3>You're on the list, <span id="success-name">friend</span>.</h3>
+            <p>
+              We'll reach out the moment whoseNearby lands in your city. Thanks
+              for being early.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="cities">
+      <div class="wrap footer-inner">
+        <div class="footer-brand">
+          <div>
+            <a href="#top"><img class="logo" src="res\Asset 1.png" alt="" /></a>
+          </div>
+          <p>Find trusted help, nearby.</p>
+        </div>
+        <div class="footer-cities">
+          <h4>Launching first in</h4>
+          <p>Benin City</p>
+        </div>
+        <div class="footer-meta">
+          <p>
+            © <span id="year"></span> whoseNearby. Built for the neighborhood.
+          </p>
+          <p class="TC-link"><a href="">Terms and Condition</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
 </html>
