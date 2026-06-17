@@ -635,8 +635,9 @@ h1, h2, h3 {
   .hero-ctas { flex-direction: column; }
   .btn { width: 100%; }
   .btn-primary-2{
-    width: 120px;
+    width: 130px;
     height: 40px;
+    font-size: 1rem;
     background-color: var(--green);
     color: var(--white);
   }
