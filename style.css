@@ -855,9 +855,12 @@ h3 {
   .btn-primary-2 {
     width: 130px;
     height: 40px;
-    font-size: 1rem;
+    font-size: .9rem;
     background-color: var(--green);
     color: var(--white);
+  }
+  .logo{
+    width: 140px;
   }
 }
 
