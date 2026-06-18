@@ -414,7 +414,7 @@ h3 {
 .strip-track {
   display: flex;
   width: max-content;
-  animation: strip-scroll 22s linear infinite;
+  animation: strip-scroll 50s linear infinite;
 }
 
 .strip-group {
