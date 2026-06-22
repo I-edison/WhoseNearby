@@ -858,6 +858,9 @@ h3 {
   font-size: 13px;
 }
 
+.TC-link{
+  text-decoration: underline;
+}
 .TC-link:hover {
   color: var(--green-deep);
   margin-top: 8px;
