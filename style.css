@@ -642,7 +642,7 @@ h3 {
 
 .pc-cover {
   height: 110px;
-  background-image: url("/res/hai-phung-m4Pd_e-4zKs-unsplash (1).jpg");
+  background-image: url("../res/hai-phung-m4Pd_e-4zKs-unsplash (1).jpg");
   background-size: cover;
   background-position: center;
   background-color: linear-gradient(135deg, var(--green) 0%, var(--green-deep) 100%);

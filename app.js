@@ -57,8 +57,6 @@ form.addEventListener('submit', function (e) {
     signup_city: city
   };
 
-  // Send the owner notification first, then the visitor confirmation.
-  // Both must be set up as templates in your EmailJS dashboard — see README.md.
   emailjs
     .send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID_OWNER, ownerParams)
     .then(function () {
