@@ -142,7 +142,7 @@ app.post("/api/signup", (req, res) => {
   if (contact.includes("@")) {
     sendEmail({
       to: contact,
-      subject: `You're on the whoseNearby waitlist, ${name.split(" ")[0]}!`,
+      subject: `You're on the whoseNearby waitlist🎉, ${name.split(" ")[0]}!`,
       body: `
         <div style="font-family:Inter,sans-serif;max-width:520px;margin:0 auto;color:#0D2818">
           <div style="background:#1B7A3E;padding:28px 32px;border-radius:12px 12px 0 0">
